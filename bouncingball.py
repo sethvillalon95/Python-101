@@ -18,10 +18,12 @@ def bounce():
     x += dx
     y += dy
     if i < 10:
-      writePictureTo(frame, "C:/Users/Seth Villalon/Desktop/ball/frame00"+str(i)+".png")
+      writePictureTo(frame, "C:/Users/user/Desktop/ball/frame00"+str(i)+".png")
     elif i < 100:
-     writePictureTo(frame, "C:/Users/Seth Villalon/Desktop/ball/frame0"+str(i)+".png")
+     writePictureTo(frame, "C:/Users/user/Desktop/ball/frame0"+str(i)+".png")
     else:
-      writePictureTo(frame, "C:/Users/Seth Villalon/Desktop/ball/frame"+str(i)+".png")
+      writePictureTo(frame, "C:/Users/user/Desktop//ball/frame"+str(i)+".png") 
     i +=1
-    
+def playMyMovie():
+  myMovie = makeMovieFromInitialFile(r"C:\Users\user\Desktop\ball\frame001.png")
+  playMovie(myMovie)
